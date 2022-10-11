@@ -3,17 +3,22 @@
   int main(){
   	setlocale (LC_ALL, "Portuguese_Brazil");
   	
-  	float a, b, resultado;
-  	printf("Divida os números que deseja:\n\n");
+  	int a, b;
   	
-  	printf("Insira o Primeiro Número: ");
-  	scanf("%f", &a);
+  	float resultado;
+  	printf("Divida os nÃºmeros que deseja:\n\n");
   	
-  	printf("Insira o Segundo Número: ");
-  	scanf("%f", &b);
+  	printf("Insira o Primeiro NÃºmero: ");
+  	scanf("%d", &a);
   	
-  	resultado = (a / b)%;
-  	printf("O quociente entre os números %.2f e %.2f é %.2", a, b, resultado);
+  	printf("Insira o Segundo NÃºmero: ");
+  	scanf("%d", &b);
+  	
+  	resultado = a / b;
+  	
+  	int resto = a % b;  	
+  	
+  	printf("O quociente entre os nÃºmeros %d e %d Ã© %.1f e o resto Ã© %d", a, b, resultado, resto);
   	
   	return 0;
   }
