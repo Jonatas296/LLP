@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <locale.h>
+ int main() {
+ 	setlocale(LC_ALL, "Portuguese_Brazil");
+ 	
+ 	int idadep1, idadep2;
+ 	printf("Calculadora\n");
+ 	
+ 	printf("Digite p1: ");
+ 	scanf("%d", &idadep1);
+ 	
+ 	printf("Digite p2: ");
+ 	scanf ("%d", &idadep2);
+ 	
+ 	if ((idadep1 % 2 == 0) && (idadep2 % 2 == 0)){
+ 			printf("Esse número é par");
+	 }
+	 
+	return 0;
+ }
