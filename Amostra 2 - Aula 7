@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <locale.h>
+
+  int main(){
+  	
+  	setlocale(LC_ALL, "Portuguese_Brazil");
+  	int idade, estudante;
+  	
+  	printf("Digite sua idade: ");
+  	scanf("%d", &idade);
+  	printf("Você é estudante?\n1 - SIM 0 - NÂO ");
+  	scanf("%d", &estudante);
+  	
+  	if((idade >= 65) || (estudante)){
+  		printf("Aqui está seu desconto!");
+	  }
+  	
+  	return 0;
+  }
